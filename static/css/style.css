@@ -45,3 +45,22 @@
     }
   }
   
+  .menu-icon {
+    display: none; /* Hide the menu icon by default on larger screens */
+  }
+  
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block; /* Show the menu icon on smaller screens */
+      cursor: pointer; /* Add cursor pointer for indicating interactivity */
+    }
+  
+    .navbar-menu {
+      display: none; /* Hide the menu items by default on smaller screens */
+    }
+  
+    .navbar-menu.active {
+      display: block; /* Show the menu items when the menu icon is clicked */
+    }
+  }
+  
