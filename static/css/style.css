@@ -60,7 +60,31 @@
     }
   
     .navbar-menu.active {
-      display: block; /* Show the menu items when the menu icon is clicked */
-    }
+        display: block; /* Show the menu items when the menu icon is clicked */
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 999;
+      }
+      
+      .navbar-menu.active li {
+        margin-bottom: 10px;
+      }
+      
+      .navbar-menu.active a {
+        color: #000;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      
+      .navbar-menu.active a:hover {
+        color: #ff5f5f;
+      }
+      
   }
   
