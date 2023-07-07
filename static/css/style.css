@@ -8,3 +8,8 @@
   .navbar-brand {
     margin-right: 1rem;
   }
+
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+  }
